@@ -5,7 +5,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { ApexOptions } from 'apexcharts';
 
 const Chart = dynamic(() => import('react-apexcharts'), {
-  ssr: false
+  ssr: false, 
 })
 
 const options: ApexOptions = {
@@ -77,7 +77,7 @@ export default function Dashboard(){
 
           <Box p={["6", "8"]} bg="gray.800" borderRadius={8} pb="4">
             <Text fontSize="lg" mb="4"> Taxa de abertura</Text>
-            <Chart options={options} series={seires} type="area" height={160}/>
+            <Chart options={options} series={seires} type="area" height={160} />
           </Box>
 
         </SimpleGrid>

@@ -19,6 +19,8 @@ export function SearchBox() {
         <Input 
           color="gray.50" 
           variant="unstyled"
+          px="4"
+          mr="4"
           placeholder="Buscar na plataforma"
           _placeholder={{ color: "gray.400" }}
         />
